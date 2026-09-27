@@ -67,3 +67,32 @@ if selected_user is not None:
 
 st.divider()
 st.caption("Built with SVD (matrix factorization) using the `surprise` library. Dataset: Netflix Prize (public, anonymized).")
+
+
+
+
+st.divider()
+
+with st.expander("ℹ️ About this project"):
+    st.markdown("""
+**Recommendation engine** built on the Netflix Prize dataset with ~100M anonymized ratings, released in 2006).
+
+**Approach:** Collaborative filtering via **SVD** (matrix factorization) using [`scikit-surprise`](https://surpriselib.com/). Sparse movies/users filtered out via quantile-based thresholding to reduce noise.
+
+**Evaluation** (RMSE / MAE, 3-fold CV)
+
+| Model | RMSE | MAE |
+|---|---|---|
+| Random Baseline | 1.45 | 1.16 |
+| **SVD** | **1.01** | **0.81** |
+| SVD++ | 1.01 | 0.82 |
+
+SVD clearly outperforms random guessing, confirming it learned real patterns from user rating behavior. SVD++ (a more complex variant) showed no meaningful improvement here, likely due to the sample size used for training — so plain SVD was chosen for its better speed/accuracy tradeoff.
+
+**Stack:** Python · pandas · scikit-surprise · Streamlit
+
+**Note:** Uses historical 2006 data — demonstrates recommender system mechanics, not live Netflix accounts.
+
+---
+*[GitHub](https://github.com/samarthboraste/netflix-movie-recommender)*
+""")

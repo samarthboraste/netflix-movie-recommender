@@ -104,4 +104,6 @@ streamlit run app.py
 ## 📬 Contact
 
 **Samarth Boraste**
-[GitHub](https://github.com/samarthboraste) · [LinkedIn](www.linkedin.com/in/samarthb77)
+[GitHub](https://github.com/samarthboraste) 
+
+ [LinkedIn](https://www.linkedin.com/in/samarthb77/)

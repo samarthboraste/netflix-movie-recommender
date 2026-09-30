@@ -60,16 +60,15 @@ SVD outperforms random guessing by ~30%, confirming it captures real user-rating
 ## 📂 Project Structure
 
 netflix-movie-recommender/
-├── app.py # Streamlit app
-├── Netflix-Project Modified.ipynb # Full data pipeline + model training
-├── svd_model.pkl # Trained SVD model
-├── movie_titles_clean.csv # Movie metadata
-├── top_customers.json # Top 200 active customer IDs
-├── all_customer_ids.json # All valid customer IDs
-├── drop_movie_list.json # Filtered-out low-rated movies
+├── app.py
+├── Netflix-Project_Modified.ipynb
+├── svd_model.pkl
+├── movie_titles_clean.csv
+├── top_customers.json
+├── all_customer_ids.json
+├── drop_movie_list.json
 ├── requirements.txt
 └── README.md
-
 
 
 ---
